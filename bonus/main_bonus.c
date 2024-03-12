@@ -26,6 +26,8 @@ int	main(int ac, char **av)
 		exit(EXIT_FAILURE);
 	check_file_isvalid(av[1]);
 	arg.map = read_map(av[1]);
+	if (!arg.map)
+		ft_error_message("Erorr: the map is empty!");
 	set_hei_wid(&arg);
 	arg.win = mlx_new_window(arg.mlx, arg.wid * 50, arg.hie * 50, "so_long");
 	check_map(&arg);
