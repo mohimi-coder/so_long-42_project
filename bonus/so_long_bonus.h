@@ -14,7 +14,6 @@
 # define SO_LONG_BONUS_H
 
 # include <mlx.h>
-# include <stdio.h>
 # include <limits.h>
 # include <fcntl.h>
 # include <stdlib.h>
