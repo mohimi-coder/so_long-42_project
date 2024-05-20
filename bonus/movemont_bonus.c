@@ -6,7 +6,7 @@
 /*   By: mohimi <mohimi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/23 19:49:03 by mohimi            #+#    #+#             */
-/*   Updated: 2024/03/08 16:56:11 by mohimi           ###   ########.fr       */
+/*   Updated: 2024/03/10 21:00:03 by mohimi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ void	move_up(t_vars *arg)
 	{
 		arg->count_move++;
 		mv = ft_itoa(arg->count_move, arg);
-		mlx_string_put(arg->mlx, arg->win, 0, 0, 0xffff, mv);
+		mlx_string_put(arg->mlx, arg->win, 20, 20, 0x0000FF00, mv);
 		free(mv);
 		if (arg->map[arg->x - 1][arg->y] == 'C')
 		{
@@ -50,7 +50,7 @@ void	move_right(t_vars *arg)
 	{
 		arg->count_move++;
 		mv = ft_itoa(arg->count_move, arg);
-		mlx_string_put(arg->mlx, arg->win, 0, 0, 0xffff, mv);
+		mlx_string_put(arg->mlx, arg->win, 20, 20, 0x0000FF00, mv);
 		free(mv);
 		if (arg->map[arg->x][arg->y + 1] == 'C')
 		{
@@ -78,7 +78,7 @@ void	move_down(t_vars *arg)
 	{
 		arg->count_move++;
 		mv = ft_itoa(arg->count_move, arg);
-		mlx_string_put(arg->mlx, arg->win, 0, 0, 0xffff, mv);
+		mlx_string_put(arg->mlx, arg->win, 20, 20, 0x0000FF00, mv);
 		free(mv);
 		if (arg->map[arg->x + 1][arg->y] == 'C')
 		{
@@ -106,7 +106,7 @@ void	move_left(t_vars *arg)
 	{
 		arg->count_move++;
 		mv = ft_itoa(arg->count_move, arg);
-		mlx_string_put(arg->mlx, arg->win, 0, 0, 0xffff, mv);
+		mlx_string_put(arg->mlx, arg->win, 20, 20, 0x0000FF00, mv);
 		free(mv);
 		if (arg->map[arg->x][arg->y - 1] == 'C')
 		{

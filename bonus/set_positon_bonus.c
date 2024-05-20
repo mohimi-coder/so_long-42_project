@@ -6,7 +6,7 @@
 /*   By: mohimi <mohimi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/23 20:24:24 by mohimi            #+#    #+#             */
-/*   Updated: 2024/03/08 14:27:07 by mohimi           ###   ########.fr       */
+/*   Updated: 2024/03/09 15:12:29 by mohimi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,7 +59,7 @@ void	check_map(t_vars *arg)
 			arg->map[i][j] != 'E' &&
 			arg->map[i][j] != 'P' && arg->map[i][j] != '0' &&
 			arg->map[i][j] != 'N')
-				ft_error_message("error from check_map!");
+				ft_error_message("Error: from check_map!");
 			j++;
 		}
 		i++;
@@ -85,7 +85,7 @@ void	check_player_count(t_vars *arg)
 			if (arg->map[i][j] == 'P')
 				count++;
 			if (count > 1)
-				ft_error_message("only one player!");
+				ft_error_message("Erorr: only one player!");
 			j++;
 		}
 		i++;
@@ -110,7 +110,7 @@ void	check_exit_count(t_vars *arg)
 			if (arg->map[i][j] == 'E')
 				exit_count++;
 			if (exit_count > 1)
-				ft_error_message("error only one exit!");
+				ft_error_message("Error: only one exit!");
 			j++;
 		}
 		i++;

@@ -6,7 +6,7 @@
 /*   By: mohimi <mohimi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/23 18:58:14 by mohimi            #+#    #+#             */
-/*   Updated: 2024/03/06 22:37:33 by mohimi           ###   ########.fr       */
+/*   Updated: 2024/05/20 18:22:46 by mohimi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,6 @@
 # include <fcntl.h>
 # include <stdlib.h>
 # include <unistd.h>
-
 # ifndef BUFFER_SIZE
 #  define BUFFER_SIZE 10
 # endif
@@ -34,7 +33,7 @@ typedef struct s_vars
 	void	*p_d;
 	void	*l;
 	void	*e;
-	void	*c;
+	void	*c_g;
 	int		hie;
 	int		wid;
 	int		x;
@@ -74,5 +73,4 @@ void	check_elements_presence(t_vars *arg);
 int		count_element(t_vars *arg, char c, char **map);
 void	flood(t_vars *arg, char *map);
 void	ft_free_leak(char **str);
-// # define malloc(x) malloc(-1)
 #endif

@@ -6,7 +6,7 @@
 /*   By: mohimi <mohimi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/06 16:04:27 by mohimi            #+#    #+#             */
-/*   Updated: 2024/03/08 14:12:46 by mohimi           ###   ########.fr       */
+/*   Updated: 2024/03/12 11:22:03 by mohimi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ int	ft_enemy(t_vars *args)
 	ft_collect(args);
 	i = -1;
 	args->enemy_caller++;
-	if (args->enemy_caller == 10000)
+	if (args->enemy_caller == 9000)
 	{
 		while (args->map[++i])
 		{

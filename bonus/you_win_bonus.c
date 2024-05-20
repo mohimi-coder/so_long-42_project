@@ -6,7 +6,7 @@
 /*   By: mohimi <mohimi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/25 14:05:35 by mohimi            #+#    #+#             */
-/*   Updated: 2024/03/06 15:35:36 by mohimi           ###   ########.fr       */
+/*   Updated: 2024/03/13 11:38:18 by mohimi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,13 +17,13 @@ void	you_win(t_vars *arg, int x, int y)
 	if (arg->count_c == 0 && arg->map[x][y] == 'E')
 	{
 		ft_free_leak(arg->map);
-		write(1, "you win!\n", 10);
+		write(1, "congratulations , you did it our super hero!\n", 46);
 		exit (0);
 	}
 	if (arg->map[x][y] == 'N')
 	{
 		ft_free_leak(arg->map);
-		write(1, "you lose!\n", 10);
+		write(1, "Sorry: you lose, try again!\n", 29);
 		exit(0);
 	}
 }
@@ -48,7 +48,7 @@ void	ft_free_leak(char **str)
 
 	i = 0;
 	if (!str)
-		ft_error_message("Empty map!!");
+		ft_error_message("Erorr: empty map!!");
 	while (str[i])
 	{
 		free(str[i]);

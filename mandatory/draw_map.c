@@ -6,7 +6,7 @@
 /*   By: mohimi <mohimi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/23 19:40:08 by mohimi            #+#    #+#             */
-/*   Updated: 2024/03/07 22:50:11 by mohimi           ###   ########.fr       */
+/*   Updated: 2024/03/09 11:53:56 by mohimi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,9 +35,9 @@ void	set_images(t_vars *arg, int *dm)
 	arg->e = mlx_xpm_file_to_image(arg->mlx, "./textures/exit.xpm", dm, dm);
 	if (!arg->e)
 		ft_error_message("Error image exit not found!");
-	arg->c = mlx_xpm_file_to_image(arg->mlx, "./textures/collect.xpm", dm, dm);
-	if (!arg->c)
-		ft_error_message("Error image collect not found!");
+	arg->c_g = mlx_xpm_file_to_image(arg->mlx, "./textures/gold.xpm", dm, dm);
+	if (!arg->c_g)
+		ft_error_message("Error image not found!");
 }
 
 void	images_elements(t_vars *arg, int i, int j)
@@ -47,7 +47,7 @@ void	images_elements(t_vars *arg, int i, int j)
 	if (arg->map[i][j] == 'P')
 		mlx_put_image_to_window(arg->mlx, arg->win, arg->p_d, j * 50, i * 50);
 	if (arg->map[i][j] == 'C')
-		mlx_put_image_to_window(arg->mlx, arg->win, arg->c, j * 50, i * 50);
+		mlx_put_image_to_window(arg->mlx, arg->win, arg->c_g, j * 50, i * 50);
 	if (arg->map[i][j] == '0')
 		mlx_put_image_to_window(arg->mlx, arg->win, arg->l, j * 50, i * 50);
 	if (arg->map[i][j] == 'E')

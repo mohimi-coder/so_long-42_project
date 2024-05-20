@@ -6,7 +6,7 @@
 /*   By: mohimi <mohimi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/23 19:05:04 by mohimi            #+#    #+#             */
-/*   Updated: 2024/03/08 19:11:44 by mohimi           ###   ########.fr       */
+/*   Updated: 2024/03/11 12:39:06 by mohimi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,14 +52,14 @@ void	check_boundary(t_vars *arg)
 	while (arg->map[0][i])
 	{
 		if (arg->map[0][i] != '1')
-			ft_error_message("Erorr: the map is not valid1!");
+			ft_error_message("Erorr: the map is not valid!");
 		i++;
 	}
 	i = 0;
 	while (arg->map[arg->hie - 1][i])
 	{
 		if (arg->map[arg->hie - 1][i] != '1')
-			ft_error_message("Error: the map is not valid2!");
+			ft_error_message("Error: the map is not valid!");
 		i++;
 	}
 }

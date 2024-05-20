@@ -6,7 +6,7 @@
 #    By: mohimi <mohimi@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/03/02 14:36:18 by mohimi            #+#    #+#              #
-#    Updated: 2024/03/08 18:29:44 by mohimi           ###   ########.fr        #
+#    Updated: 2024/03/11 15:49:59 by mohimi           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,6 +15,7 @@ CC = cc
 FLAGS = -Wall -Wextra -Werror -Imlx -g
 
 NAME = so_long
+
 NAME_BONUS = so_long_bonus
 
 SRCS = ./mandatory/ft_split.c \
@@ -84,3 +85,5 @@ fclean: clean
 	@echo "$(GREEN)$(NAME)$(NAME_BONUS) fcleaned$(RESET)"
 
 .PHONY: clean
+
+char *x = NULL;
