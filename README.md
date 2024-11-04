@@ -1,4 +1,9 @@
-# so_long-42_project
+<h1 align="center">so_long- 42 _ 1337 </h1>
+<p align="center">
+  <a href="https://github.com//mohimi-coder/so_long">
+    <img src="https://github.com/mohimi-coder/1337_badges/blob/master/so_longm.png?raw=true" alt="42 Badge">
+  </a>
+</p>
 
 This is a small game project from 1337/42school implemented using MiniLibX. The project is inspired by Game Freak's Thief steals jewelry.
 
