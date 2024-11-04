@@ -1,4 +1,4 @@
-<h1 align="center">so_long- 42 _ 1337 </h1>
+<h1 align="center">so_long_42_1337 </h1>
 <p align="center">
   <a href="https://github.com//mohimi-coder/so_long">
     <img src="https://github.com/mohimi-coder/1337_badges/blob/master/so_longm.png?raw=true" alt="42 Badge">
